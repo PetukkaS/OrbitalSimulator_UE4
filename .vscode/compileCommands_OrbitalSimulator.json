@@ -1,0 +1,27 @@
+[
+	{
+		"file": "H:\\\\Unreal Engine\\\\Unreal Projects\\\\OrbitalSimulator\\\\Source\\\\OrbitalSimulator\\\\OrbitalSimulator.Build.cs",
+		"command": "cl.exe @\"H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\.vscode\\compileCommands_OrbitalSimulator\\OrbitalSimulator.182.rsp\"",
+		"directory": "H:\\Epic\\Files\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "H:\\\\Unreal Engine\\\\Unreal Projects\\\\OrbitalSimulator\\\\Source\\\\OrbitalSimulator\\\\OrbitalSimulator.cpp",
+		"command": "cl.exe @\"H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\.vscode\\compileCommands_OrbitalSimulator\\OrbitalSimulator.182.rsp\"",
+		"directory": "H:\\Epic\\Files\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "H:\\\\Unreal Engine\\\\Unreal Projects\\\\OrbitalSimulator\\\\Source\\\\OrbitalSimulator\\\\OrbitalSimulator.h",
+		"command": "cl.exe @\"H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\.vscode\\compileCommands_OrbitalSimulator\\OrbitalSimulator.182.rsp\"",
+		"directory": "H:\\Epic\\Files\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "H:\\\\Unreal Engine\\\\Unreal Projects\\\\OrbitalSimulator\\\\Source\\\\OrbitalSimulator\\\\OrbitalSimulatorGameModeBase.cpp",
+		"command": "cl.exe @\"H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\.vscode\\compileCommands_OrbitalSimulator\\OrbitalSimulator.182.rsp\"",
+		"directory": "H:\\Epic\\Files\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "H:\\\\Unreal Engine\\\\Unreal Projects\\\\OrbitalSimulator\\\\Source\\\\OrbitalSimulator\\\\OrbitalSimulatorGameModeBase.h",
+		"command": "cl.exe @\"H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\.vscode\\compileCommands_OrbitalSimulator\\OrbitalSimulator.182.rsp\"",
+		"directory": "H:\\Epic\\Files\\UE_4.26\\Engine\\Source"
+	}
+]

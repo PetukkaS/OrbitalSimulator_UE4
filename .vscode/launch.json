@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "OrbitalSimulator (Debug)",
+			"request": "launch",
+			"preLaunchTask": "OrbitalSimulator Win64 Debug Build",
+			"program": "H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "H:\\Epic\\Files\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic\\Files\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "OrbitalSimulator (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "OrbitalSimulator Win64 DebugGame Build",
+			"program": "H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "H:\\Epic\\Files\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic\\Files\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "OrbitalSimulator (Development)",
+			"request": "launch",
+			"preLaunchTask": "OrbitalSimulator Win64 Development Build",
+			"program": "H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "H:\\Epic\\Files\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic\\Files\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "OrbitalSimulator (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "OrbitalSimulator Win64 Shipping Build",
+			"program": "H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "H:\\Epic\\Files\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic\\Files\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "OrbitalSimulator (Test)",
+			"request": "launch",
+			"preLaunchTask": "OrbitalSimulator Win64 Test Build",
+			"program": "H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "H:\\Epic\\Files\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic\\Files\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "OrbitalSimulatorEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "OrbitalSimulatorEditor Win64 Debug Build",
+			"program": "H:\\Epic\\Files\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\OrbitalSimulator.uproject"
+			],
+			"cwd": "H:\\Epic\\Files\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic\\Files\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "OrbitalSimulatorEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "OrbitalSimulatorEditor Win64 DebugGame Build",
+			"program": "H:\\Epic\\Files\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\OrbitalSimulator.uproject"
+			],
+			"cwd": "H:\\Epic\\Files\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic\\Files\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "OrbitalSimulatorEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "OrbitalSimulatorEditor Win64 Development Build",
+			"program": "H:\\Epic\\Files\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\OrbitalSimulator.uproject"
+			],
+			"cwd": "H:\\Epic\\Files\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "H:\\Epic\\Files\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "H:\\Epic\\Files\\UE_4.26\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\OrbitalSimulator.uproject",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "H:\\Epic\\Files\\UE_4.26"
+		}
+	]
+}

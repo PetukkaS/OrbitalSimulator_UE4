@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "OrbitalSimulatorEditor Editor Win64 Development (OrbitalSimulator)",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\.vscode\\compileCommands_OrbitalSimulator.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "Win32",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "H:\\Unreal Engine\\Unreal Projects\\OrbitalSimulator\\.vscode\\compileCommands_Default.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
