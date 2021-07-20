@@ -31,19 +31,19 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	FVector CurrentVelocity = FVector(0.f);
+	FVector CurrentVelocity = FVector(0.f); // m/s
 
 public:	
 
-	// Mass in kg
+	// Mass in Earth Masses
 	UPROPERTY(EditAnywhere)
-	float Mass = 3000.f;
+	float Mass = 1.f;
 
 	UPROPERTY(EditAnywhere)
 	FString Name = "Default";
 
 	UPROPERTY(EditAnywhere)
-	FVector InitialVelocity = FVector(0.f);
+	FVector InitialVelocity = FVector(0.f); // m/s
 
 	UPROPERTY(EditAnywhere)
 	FVector RGB = FVector(0.f);

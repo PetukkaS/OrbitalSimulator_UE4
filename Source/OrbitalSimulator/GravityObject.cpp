@@ -24,13 +24,18 @@ void AGravityObject::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	UpdatePosition(DeltaTime);
+	//float TimeMultiplier = 1.f;
+	float TimeMultiplier = 1000000.f;
+
+	UpdatePosition(DeltaTime*TimeMultiplier);
+
+	//UE_LOG(LogTemp, Warning, TEXT("DeltaTime: %f"), DeltaTime);
 }
 
 void AGravityObject::UpdatePosition(float DeltaTime)
 {
-	//float AU = 149597870700.f;
-	float AU = 1.f; 
+	float AU = 149597870700.f; // m
+	//float AU = 1.f; 
 
 	// Take the Unreal Scale into consideration
 	FVector CurrentLocation = this->GetActorLocation();
@@ -40,6 +45,9 @@ void AGravityObject::UpdatePosition(float DeltaTime)
 	DrawDebugLine(GetWorld(), CurrentLocation, NewLocation, FColor(RGB.X, RGB.Y, RGB.Z), true);
 
 	UpdateVelocity(DeltaTime);
+
+	//UE_LOG(LogTemp, Warning, TEXT("This name: %s Position: %f %f %f AU"), *this->GetName(), NewLocation.X, NewLocation.Y, NewLocation.Z);
+
 }
 
 void AGravityObject::UpdateVelocity(float DeltaTime)
@@ -49,13 +57,18 @@ void AGravityObject::UpdateVelocity(float DeltaTime)
 
 FVector AGravityObject::Acceleration()
 {
-	//float GravConst = 6.67408E-11;
+	float GravConst = 6.67408E-11;
 
-	float GravConst = 1;
+	//float GravConst = 1;
 
-	//float AU = 149597870700.f;
+	float AU = 149597870700.f; // m
 
-	float AU = 1.f;
+	//float AU = 1.f;
+
+	// Earth mass
+	float MassMultiplier = 5.972E24; // kg
+
+	// float MassMultiplier = 1.f
 
 	FVector TotalAcceleration = FVector(0.f);
 
@@ -77,7 +90,7 @@ FVector AGravityObject::Acceleration()
 				// Distances in Unreal Scale
 				FVector Dir =  GravityObject->GetActorLocation() - this->GetActorLocation();
 
-				float Acceleration = GravConst*GravityObject->GetMass()/FMath::Pow((Dir.Size()*AU/100.f),2);
+				float Acceleration = GravConst*GravityObject->GetMass()*MassMultiplier/FMath::Pow((Dir.Size()*AU/100.f),2);
 
 				TotalAcceleration += Acceleration*Dir.GetSafeNormal();
 			}
